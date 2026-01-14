@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk ro'yatul hasanah | Perjalanan Hati</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <main>
+        <section class="page-section">
+            <div class="illustration-box">
+                <img src="halaman1.png" alt="Ilustrasi Romantis" class="hero-img">
+            </div>
+            <h1>Halo, ro'yatul hasanah</h1>
+            <p class="message-text">Ada sebuah cerita perjalanan hati yang tersimpan di dalam amplop ini...</p>
+
+            <div class="envelope-wrapper" id="envelope">
+                <div class="envelope">
+                    <div class="envelope-front"></div>
+                    <div class="card">
+                        <span class="close-btn">&times;</span>
+
+                        <!-- Dynamic Card Content (4 Pages) -->
+                        <div class="card-content" id="cardContent">
+                            <!-- Page 1: The Letter -->
+                            <div class="card-page active" data-page="1">
+                                <p class="greeting">Untuk ro'yatul hasanah,</p>
+                                <p class="message-text">Malam-malamku kini punya nama, dan siangku punya alasan untuk
+                                    tetap tersenyum. Semuanya bermuara pada satu nama yang tak henti-hentinya kutitipkan
+                                    pada semesta: <strong>namamu</strong>.</p>
+                                <p class="message-text">Tahukah kamu? Bagiku, kamu bukan sekadar seseorang yang hadir,
+                                    tapi sebuah jawaban dari doa-doa yang pernah kupanjatkan dalam diam. Kamu adalah
+                                    puisi terindah yang pernah dituliskan takdir dalam lembaran hidupku.</p>
+                                <div class="quote-text">
+                                    “Jika mencintaimu adalah sebuah perjalanan, maka aku ingin tersesat selamanya di
+                                    dalam ketulusanmu.”
+                                </div>
+                                <div class="romance-footer">
+                                    <p>Tertanda,</p>
+                                    <p class="writer-name">Seseorang yang mencintaimu.</p>
+                                </div>
+                            </div>
+
+                            <!-- Page 2: The Flower -->
+                            <div class="card-page" data-page="2">
+                                <img src="halaman2.png" alt="Bunga" class="card-illustration">
+                                <h2>Terimalah Bunga Ini</h2>
+                                <p class="message-text">“Suatu hari nanti, aku berharap langkah-langkah kita bertemu di
+                                    titik yang sama dengan hati yang siap.”</p>
+                                <p class="message-text">“Untukmu, ro'yatul hasanah, yang diam-diam kupuji lewat doa.”
+                                </p>
+                                <div class="footer-note">Dari seseorang yang selalu mendoakanmu diam-diam.</div>
+                            </div>
+
+                            <!-- Page 3: Starry Night -->
+                            <div class="card-page" data-page="3">
+                                <img src="halaman3.png" alt="Bintang" class="card-illustration">
+                                <h2>Semesta Menjadi Saksi</h2>
+                                <p class="message-text">“Bahkan ribuan bintang di langit takkan mampu menandingi binar
+                                    indah di matamu saat kamu bahagia.”</p>
+                                <p class="message-text">“Setiap bintang yang kupandang, mengingatkanku pada ketulusan
+                                    yang kamu miliki. Tetaplah indah dengan caramu sendiri.”</p>
+                            </div>
+
+                            <!-- Page 4: Beach Sunset -->
+                            <div class="card-page" data-page="4">
+                                <img src="halaman4.png" alt="Pantai" class="card-illustration">
+                                <h2>Langkah Bersamamu</h2>
+                                <p class="message-text">“Jarak mungkin memisahkan raga, namun doa akan selalu
+                                    mempertemukan rasa. Aku ingin berjalan bersamamu, melewati setiap senja hingga ujung
+                                    waktu.”</p>
+                                <p class="message-text">“Terima kasih telah menjadi bagian paling berharga dalam
+                                    ceritaku. Sampai jumpa di titik pertemuan terbaik kita nanti.”</p>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Bar inside Card -->
+                        <div class="card-navigation">
+                            <button class="nav-btn" id="prevBtn" disabled>Sebelumnya</button>
+                            <div class="nav-dots" id="navDots">
+                                <div class="dot active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <button class="nav-btn" id="nextBtn">Berikutnya</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="scroll-hint" style="margin-top: 3rem;">Klik amplop untuk membuka seluruh cerita ✨</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
